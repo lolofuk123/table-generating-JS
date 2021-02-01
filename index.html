@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body class="container">
+    <header>
+        <h1 class="title">Malá násobilka pomocou javascriptu</h1>
+    </header>
+
+    <div>
+        <div>
+            <label for="num1">Zadajte x</label>
+            <input type="number" name="num1" id="num1" min="1" max="9">
+            <span class="error" id="xError">*X musi byt v rozsahu od 1-9</span>
+        </div>
+        <div>
+            <label for="num2">Zadajte y</label>
+            <input type="number" name="num2" id="num2" min="1" max="9">
+            <span class="error" id="yError">*Y musi byt v rozsahu od 1-9</span>
+        </div>
+    </div>
+    <button id="openModal" onclick="showModal()" class="btn btn-primary">Vyrataj</button>
+  
+    <div id="myModal" class="modal">
+        <div class="modal-content" id="modalContent">
+            <p>
+                <span id="tableTitle"></span>
+                <table id="table">
+                    <tbody id="tbody"></tbody>
+                </table>
+            </p>
+            <button id="close" onclick="closeModal()" class="clsBtn btn btn-secondary">Zavrieť</button>
+        </div>
+    </div>
+    <hr>
+    <footer>
+        <h2>&copy;Lukáš Záhumenský</h2>
+    </footer>
+</body>
+</html>
